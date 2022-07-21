@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""a module with a getter and a setter"""
+
+
 class Square:
     """Represents a square.
     Private instance attribute: size:
