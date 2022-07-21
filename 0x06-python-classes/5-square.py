@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""this is a module with the my_print methhod"""
+
+
 class Square:
     """Represents a square.
     Private instance attribute: size:
