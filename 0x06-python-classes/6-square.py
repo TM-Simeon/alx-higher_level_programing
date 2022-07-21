@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""a module with a property and a setter for position"""
+
+
 class Square:
     """Represents a square.
     Private instance attribute: size:
