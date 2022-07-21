@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""a module to return the area via a method"""
+
+
 class Square:
     """Represents a square.
     Private instance attribute: size.
