@@ -71,6 +71,7 @@ class Square:
             print()
 
     def __str__(self):
+        """this method returns a string for printing"""
         if self.__size == 0:
             print()
         else:
