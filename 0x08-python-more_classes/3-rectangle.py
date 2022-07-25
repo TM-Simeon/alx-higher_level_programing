@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-"""Rectangle module to define a rectangle"""
+"""a module to define a rectangle"""
 
 
 class Rectangle:
-    """Rectangle class: defines a rectangle"""
+    """ define a rectangle with width and height"""
     def __init__(self, width=0, height=0):
-        """instance attributes:
+        """initiate the values.
+
         Args:
-            height: height of rectangle
-            width: width of rectangle
+            width: width of the rectangle
+            height: height of the rectangle
         """
         self.__width = width
         self.__height = height
@@ -20,9 +21,10 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """width setter
+        """setter for width
+
         Args:
-            value: the value for width
+            value: value of the width, must be a positive integer
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -38,11 +40,30 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """height setter
+
         Args:
-            value: the value for height
+            value: value of the height, must be a positive integer
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """method to return the area"""
+        return self.__width * self.__height
+
+    def perimeter(self):
+        """public method to return the perimeter"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        else:
+            return 2*self.__width + 2*self.__height
+
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            result = ""
+        for i in range(self.__width):
+            for k in range(self.__height):
+                result = "#" 
