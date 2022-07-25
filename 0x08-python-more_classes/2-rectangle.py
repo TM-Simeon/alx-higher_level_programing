@@ -52,7 +52,7 @@ class Rectangle:
 
     def area(self):
         """method to return the area"""
-        return width * height
+        return self.idth * self.height
 
     def perimeter(self):
         """public method to return the perimeter"""
