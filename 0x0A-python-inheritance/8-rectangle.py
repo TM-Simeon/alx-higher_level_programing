@@ -2,7 +2,7 @@
 """a module to write an empty class"""
 
 
-class BaseGeometry:
+class Rectangle:
     """an empty class"""
     def __init__(self, width, height):
         """the init method for the class"""
