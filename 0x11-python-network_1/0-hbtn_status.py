@@ -3,6 +3,7 @@
 
 
 if __name__ == "__main__":
+    """should run only if it is the main"""
     import urllib.request
 
     with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
