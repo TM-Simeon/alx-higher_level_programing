@@ -1,0 +1,23 @@
+#!/usr/bin/node
+// script to compute number of task completed by a user
+let request = require('request')
+request('https://jsonplaceholder.typicode.com/users', (err, response, body) => {
+	let dick = {}
+	JSON.parse(body).forEach(user => {
+		let count = 0;
+		userId = user.id;
+		request('https://jsonplaceholder.typicode.com/todos', (err, response, body) => {
+			JSON.parse(body).forEach(todo => {
+				if ( todo.userId == userId && todo.completed == true) {
+					count += 1;
+					console.log('%i i worked', userId)
+				}
+			});
+				dick['name'] = "count";
+
+		//console.log(userId)
+	});
+	//dick.userId = count;	
+});
+	console.log(dick);
+});
